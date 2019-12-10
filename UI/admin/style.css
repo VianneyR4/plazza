@@ -6735,5 +6735,18 @@ table#t01 th {
     color: #eb9c9cab;
 }
 
+.payment-adress button {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#article #text_area {
+    height: 318px;
+}
+
+#temoignage #text_area {
+    height: 90px;
+}
+
 
 /* ********* End Admin img boxs ********** */

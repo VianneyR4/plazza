@@ -1,6 +1,6 @@
 <?php
 
-    $to = "mgcsarl@gmail.com";
+    $to = "lajoieplazza@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -13,10 +13,10 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Cake Template.";
+    $subject = "You have a message from your La Joie Plazza Website.";
 
-    $logo = 'http://wethemez.com/test-html/consultplus/img/logo-black.png';
-    $link = '#';
+    $logo = 'http://lajoieplazzahotel.com/UI/img/logo/logo.png';
+    $link = 'http://lajoieplazzahotel.com';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";

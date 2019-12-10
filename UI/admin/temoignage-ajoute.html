@@ -107,19 +107,19 @@
                                 <li><a title="galerie-ajoute" href="galerie-ajoute.html"><span class="mini-sub-pro"> | Ajouté</span></a></li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a class="has-arrow" href="blog.html" aria-expanded="false"><img id="icon_img" src="img/icons/blog.png" /> <span class="mini-click-non">Blog</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="blog-tout" href="blog-tout.html"><span class="mini-sub-pro"> | Toute</span></a></li>
                                 <li><a title="blog-ajoute" href="blog-ajoute.html"><span class="mini-sub-pro"> | Ajouté</span></a></li>
-                                <li class="active"><a title="blog-edite" href="blog-edite.html"><span class="mini-sub-pro"> | Edité</span></a></li>
+                                <li><a title="blog-edite" href="blog-edite.html"><span class="mini-sub-pro"> | Edité</span></a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a class="has-arrow" href="temoignage.html" aria-expanded="false"><img id="icon_img" src="img/icons/testim.png" /> <span class="mini-click-non">Temoignage</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="temoignage-tout" href="temoignage-tout.html"><span class="mini-sub-pro"> | Toute</span></a></li>
-                                <li><a title="temoignage-ajoute" href="temoignage-ajoute.html"><span class="mini-sub-pro"> | Ajouté</span></a></li>
+                                <li class="active"><a title="temoignage-ajoute" href="temoignage-ajoute.html"><span class="mini-sub-pro"> | Ajouté</span></a></li>
                                 <li><a title="temoignage-edite" href="temoignage-edite.html"><span class="mini-sub-pro"> | Edité</span></a></li>
                             </ul>
                         </li>
@@ -298,7 +298,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="product-payment-inner-st">
                             <ul id="myTabedu1" class="tab-review-design">
-                                <li class="active"><a href="#description">Edité l'article</a></li>
+                                <li class="active"><a href="#description">Ajouté un temoignage</a></li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit">
                                 <div class="product-tab-list tab-pane fade active in" id="description">
@@ -310,37 +310,22 @@
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <input name="bloger" type="text" class="form-control" value="Vianney R" placeholder="Nom du blogeur.">
+                                                                    <input name="name" type="text" class="form-control" placeholder="Nom du temoin.">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="gender" class="form-control">
-                                                                        <option value="Technologie">Technologie</option>
-                                                                        <option value="Nouriture">Nouriture</option>
-                                                                        <option value="Technologie">Technologie</option>
-                                                                        <option value="Entrepreunariat">Entrepreunariat</option>
-                                                                        <option value="Lifestyle">Lifestyle</option>
+                                                                    <select name="etoiles" class="form-control">
+                                                                        <option value="none" selected="" disabled="">Selectionner le nombre d'etoile</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
                                                                     </select>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input name="title" type="text" value="Ca c'est mon titre" class="form-control" placeholder="Titre de l'article.">
-                                                                </div>
-                                                                <div class="form-group alert-up-pd">
-                                                                    <div class="dz-message needsclick download-custom">
-                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
-                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
-                                                                        <p class="edudropnone"><span class="note needsclick">(This is just a demo dropzone. Selected image is <strong>not</strong> actually uploaded.)</span>
-                                                                        </p>
-                                                                        <input name="imageico" class="hd-pro-img" type="text" />
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                <div class="form-group res-mg-t-15" id="article">
-                                                                    <textarea name="article" placeholder="Article" id="text_area">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis consequatur minima ab asperiores veniam et. Corporis, esse a voluptates et, quas neque exercitationem velit ipsum omnis cum, excepturi adipisci?
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam necessitatibus et, omnis laborum blanditiis ipsa delectus sunt tempore natus dolorem iusto veniam quisquam? Quibusdam quod maxime inventore reiciendis suscipit!
-                                                                    </textarea>
+                                                                <div class="form-group res-mg-t-15" id="temoignage">
+                                                                    <textarea name="temoignge" placeholder="Temoignage" id="text_area"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -349,26 +334,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam nece
                                                                 <br/>
                                                                 <div class="payment-adress">
                                                                     <button type="submit" class="btn btn-primary waves-effect waves-light">
-                                                                        Mettre à jour l'article 
-                                                                        <span class="ion-android-create"></span>
+                                                                        Posté 
+                                                                        <span class="ion-ios-navigate"></span>
                                                                     </button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </form>
-                                                    <br/><br/><br/><br/><br/><br/>
-                                                    <div class="box-des-images">
-                                                        <div class="row">
-                                                            <div class="admin-img-box col-md-4 col-sm-12">
-                                                                <form action="">
-                                                                    <img src="../image/room1.jpg" />
-                                                                    <button type="submit">
-                                                                        <span class="ion-close-circled"></span>
-                                                                    </button>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -453,9 +425,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quibusdam nece
     <script src="js/form-validation/jquery.form.min.js"></script>
     <script src="js/form-validation/jquery.validate.min.js"></script>
     <script src="js/form-validation/form-active.js"></script>
-    <!-- dropzone JS
-		============================================ -->
-    <script src="js/dropzone/dropzone.js"></script>
     <!-- tab JS
 		============================================ -->
     <script src="js/tab.js"></script>
