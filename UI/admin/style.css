@@ -1,12 +1,5 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Kiaalap - Kiaalap Admin Template 
-    Description: Kiaalap Admin Template is a responsive admin template based on the famous Bootstrap framework it's easy to edit and customize by documentation.
-    Author: Colorlib
-    Version: 1.0
-
------------------------------------------------------------------------------------
-    
     CSS INDEX
     ===================
 	
@@ -6710,10 +6703,10 @@ table#t01 th {
     height: 230px;
     object-fit: cover;
     position: relative;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
-.admin-img-box button {
+.admin-img-box a {
     position: absolute;
     top: -20px;
     right: 0;
@@ -6722,16 +6715,16 @@ table#t01 th {
     outline: none;
 }
 
-.admin-img-box button span {
+.admin-img-box a span {
     color: rgba(231, 12, 12, 0.801);
-    font-size: 40px;
+    font-size: 30px !important;
 }
 
-.admin-img-box button span:hover {
+.admin-img-box a span:hover {
     color: rgba(216, 55, 55, 0.801);
 }
 
-.admin-img-box button span:active {
+.admin-img-box a span:active {
     color: #eb9c9cab;
 }
 
@@ -6748,5 +6741,59 @@ table#t01 th {
     height: 90px;
 }
 
+#multi_media {
+    padding: 30px 0px !important;
+}
+
 
 /* ********* End Admin img boxs ********** */
+
+
+/* ******** Start Server Side ********** */
+
+.server-message {
+    padding: 20px;
+    margin: 0px 15px 20px;
+}
+
+.server-message ul li {
+    margin: 0px 50px;
+    list-style-type: disc;
+}
+
+.server-message.bg-danger {
+    color: rgb(236, 44, 70) !important;
+}
+
+.server-message.bg-danger span {
+    font-weight: 600;
+    color: rgb(212, 21, 46) !important;
+}
+
+.server-message.bg-success {
+    color: #48b61c !important;
+}
+
+.server-message.bg-success span {
+    font-weight: 600;
+    color: #41a11a !important;
+    margin-right: 10px;
+}
+
+.server-message.bg-success small {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0px 5px 0px 10px;
+    border-radius: 20px;
+    color: #48b61c !important;
+    border: 2px solid #41a11a;
+}
+
+button[name="delete_room"] {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+/* ********* End Server Side ********** */

@@ -1,15 +1,3 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-
-
 /*=====================================================================
 @Template Name: Royal Hotel
 @Author: Rocky
@@ -163,7 +151,7 @@ button:focus {
 }
 
 .section_title p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: #777777;
     margin-bottom: 0px;
@@ -371,7 +359,7 @@ button:focus {
 }
 
 .navbar .menu_nav .nav-item .nav-link {
-    font: 500 12px/80px "Poppins", sans-serif;
+    font: 500 15px/80px "Poppins", sans-serif;
     color: #222222;
     text-transform: uppercase;
     padding: 0px;
@@ -547,7 +535,7 @@ button:focus {
 
 .banner_area .bg-parallax {
     background: url("../../image/banner_bg.jpg") no-repeat scroll center 0/cover;
-    opacity: 0.50;
+    opacity: 0.60;
 }
 
 .banner_area .position {
@@ -561,7 +549,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 750px;
+    min-height: 800px;
 }
 
 .overlay {
@@ -575,6 +563,7 @@ button:focus {
 }
 
 .banner_content {
+    /* color: #47492c; */
     color: #fff;
     margin-bottom: 94px;
 }
@@ -638,7 +627,8 @@ button:focus {
     border: 1px solid #2b3146;
     background: transparent;
     border-radius: 0px;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 38px;
     padding: 0px 20px;
     color: #777777;
@@ -768,7 +758,7 @@ button:focus {
 /*=============Blog Banner css =============*/
 
 .blog_banner {
-    min-height: 780px;
+    min-height: 500px;
     overflow: hidden;
 }
 
@@ -787,12 +777,14 @@ button:focus {
     font-weight: bold;
     color: #fff;
     font-family: "Poppins", sans-serif;
+    text-shadow: 1px 5px 10px #181818;
 }
 
 .blog_banner .banner_content p {
     font-size: 16px;
     padding: 0px;
     margin-bottom: 35px;
+    text-shadow: 1px 5px 10px #181818;
 }
 
 .f_48 {
@@ -939,6 +931,7 @@ button:focus {
 
 .about_content p {
     padding: 18px 0px 30px;
+    font-size: 16px;
 }
 
 
@@ -3776,12 +3769,18 @@ h6 {
     bottom: 0;
     /* background: #000; */
     background: #0b1803;
-    opacity: .45;
+    opacity: .20;
     content: "";
 }
 
 .room figure .img-fluid {
     width: 100%;
+}
+
+#img_from_db {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
 }
 
 .room figure .overlap-text {
@@ -3798,6 +3797,11 @@ h6 {
     padding: 30px;
     border: 1px solid #e6e6e6;
     border-top: none;
+}
+
+.room .media-body p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sec_h4 {
@@ -3893,12 +3897,27 @@ h6 {
         width: 95%;
         margin: auto;
     }
+    .room figure .img-fluid#img_from_db {
+        height: 130px;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 766px) {
     #container_acomodation {
         width: 85%;
         margin: auto;
+    }
+    #img_from_db {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 450px) {
+    #img_from_db {
+        height: 190px;
+        object-fit: cover;
     }
 }
 
